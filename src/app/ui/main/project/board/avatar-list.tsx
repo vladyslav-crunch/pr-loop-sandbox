@@ -4,7 +4,7 @@ import { UserAvatar } from "@app/components/user-avatar/user-avatar";
 import { ScrollArea } from "@app/components/scroll-area/scroll-area";
 
 const AVATAR_SIZE = 40;
-const MAX_DISPLAY_USERS = 4;
+const MAX_DISPLAY_USERS = 5;
 
 export const UserAvatarList = ({ users }: Props): JSX.Element => {
   const displayUsers = users.slice(0, MAX_DISPLAY_USERS);
@@ -47,7 +47,7 @@ const MoreUsers = ({ users }: MoreUsersProps): JSX.Element => (
               key={user.id}
               className="mb-1 flex items-center justify-start gap-3 rounded px-1 py-1 outline-none last:mb-0 focus:bg-background-neutral focus-visible:outline-none"
             >
-              <UserAvatar {...user} size={44} />
+              <UserAvatar {...user} size={AVATAR_SIZE} />
               <span>{user.name}</span>
             </DropdownMenu.Item>
           ))}
