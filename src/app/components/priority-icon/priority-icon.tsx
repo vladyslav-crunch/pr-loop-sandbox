@@ -7,6 +7,8 @@ export const PriorityIcon = ({
   size = 18,
 }: PriorityIconProps): JSX.Element => (
   <span
+    role="img"
+    aria-label={`${priority} priority`}
     className={cx(
       "flex",
       priority === "low" && "text-icon-accent-green",
