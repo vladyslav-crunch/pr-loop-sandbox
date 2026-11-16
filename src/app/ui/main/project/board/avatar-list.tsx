@@ -19,7 +19,7 @@ export const UserAvatarList = ({ users }: Props): JSX.Element => {
           <UserAvatar {...user} size={AVATAR_SIZE} tooltip />
         </div>
       ))}
-      {users.length > MAX_DISPLAY_USERS && <MoreUsers users={users} />}
+      {users.length >= MAX_DISPLAY_USERS && <MoreUsers users={users} />}
     </span>
   );
 };
