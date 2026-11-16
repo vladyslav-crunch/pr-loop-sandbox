@@ -4,7 +4,7 @@ import { UserAvatar } from "@app/components/user-avatar/user-avatar";
 import { ScrollArea } from "@app/components/scroll-area/scroll-area";
 
 const AVATAR_SIZE = 40;
-const MAX_DISPLAY_USERS = 4;
+const MAX_DISPLAY_USERS = 5;
 
 export const UserAvatarList = ({ users }: Props): JSX.Element => {
   const displayUsers = users.slice(0, MAX_DISPLAY_USERS);
